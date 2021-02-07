@@ -1,0 +1,21 @@
+# 말뭉치 목록을 확인하는 파이썬 예제는 다음과 같습니다.
+
+from Korpora import Korpora
+Korpora.corpus_list()
+
+
+
+# 파이썬 콘솔에서 KcBERT 학습데이터를 내려 받는 파이썬 예제는 다음과 같습니다. 사용자의 로컬 컴퓨터 루트 하위의 Korpora라는 디렉토리(~/Korpora)에 말뭉치를 내려 받습니다. 다른 데이터를 받고 싶다면 위에서 확인한 말뭉치 이름을 인자로 주면 됩니다.
+
+from Korpora import Korpora
+Korpora.fetch("kcbert")
+
+
+
+# Korpora가 제공하는 모든 말뭉치를 내려받고 싶다면 다음과 같이 실행하세요. ~/Korpora에 말뭉치를 내려 받습니다.
+
+from Korpora import Korpora
+Korpora.fetch('all')
+
+
+# https://github.com/ko-nlp/Korpora 에서 발췌.
